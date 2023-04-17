@@ -1,0 +1,124 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --bg-dark-blue: hsl(217, 54%, 11%); /*main background*/
+    --card-dark-blue: hsl(216, 50%, 16%); /*card background*/
+    --line-dark-blue: hsl(215, 32%, 27%); /*line*/
+
+    --white: hsl(0, 0%, 100%);
+
+    --font-family: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark-blue);
+    font-family: var(--font-family);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.card {
+    background-color: var(--card-dark-blue);
+    width: 300px;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 50px;
+}
+
+.cyan-img {
+    background-color: var(--cyan);
+    height: 260px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye {
+    position: absolute;
+    display: none;
+}
+
+.eq-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+.eq-img:hover {
+    opacity: 0.5;
+
+}
+
+.cyan-img:hover .eye {
+    display: inherit;
+    z-index: 1;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    color: var(--cyan);
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 18px 0;
+}
+
+.balance, .time {
+    font-size: 15px;
+    display: inline;
+}
+
+.balance img, .time img{
+    margin-right: 5px;
+    margin-top: 18px;
+}
+.balance {
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.time {
+    font-weight: 400;
+    margin-left: 75px;
+}
+
+hr {
+    border: 0.5px solid  var(--line-dark-blue);
+    margin: 18px 0;
+}
+
+.footer {
+    font-size: 14px;
+}
+
+.footer p {
+    padding-top: 5px;
+}
+
+.profile-picture {
+    width: 30px;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+}
