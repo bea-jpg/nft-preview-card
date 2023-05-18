@@ -59,7 +59,10 @@ body {
 
 .eq-img:hover {
     opacity: 0.5;
+}
 
+.eye:hover + .eq-img{
+    opacity: 0.5;
 }
 
 .cyan-img:hover .eye {
